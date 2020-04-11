@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Operations Version="1.0" xmlns="http://schemas.microsoft.com/sqlserver/dac/Serialization/2012/02">
+  <Operation Name="Rename Refactor" Key="166749f6-f46d-4ea9-a841-c2502bd4a5dd" ChangeDateTime="01/23/2020 23:16:54">
+    <Property Name="ElementName" Value="[dbo].[User].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[User]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="UserId" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="007d9898-8eb7-40a6-89b5-e0c0acb24a9f" ChangeDateTime="02/02/2020 13:44:51">
+    <Property Name="ElementName" Value="[dbo].[Login].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Login]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="UserId" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="861ba424-837e-4049-ba55-06917549409a" ChangeDateTime="02/02/2020 13:47:38">
+    <Property Name="ElementName" Value="[dbo].[Lockers].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Lockers]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="LockerNum" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="14613535-c035-41b9-9218-ae45304995cc" ChangeDateTime="02/02/2020 13:49:40">
+    <Property Name="ElementName" Value="[dbo].[Room].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Room]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="RoomId" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="8aeedc63-3723-4a0e-a594-48ef9ad3338c" ChangeDateTime="02/02/2020 13:51:23">
+    <Property Name="ElementName" Value="[dbo].[Equipment].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Equipment]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="SerialNum" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="8acf771f-2ef7-4de3-849e-6a730d40099c" ChangeDateTime="02/02/2020 13:53:01">
+    <Property Name="ElementName" Value="[dbo].[MaintenanceForm].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[MaintenanceForm]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="MaintenanceId" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="8f552a44-00eb-4e86-afd5-e562c6fee764" ChangeDateTime="02/02/2020 13:55:41">
+    <Property Name="ElementName" Value="[dbo].[EmailBlast].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[EmailBlast]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="EmailDate" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="b997ed7d-ecd0-47e3-8c0d-2d4d24443ee7" ChangeDateTime="02/02/2020 13:57:34">
+    <Property Name="ElementName" Value="[dbo].[Member].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Member]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="UserId" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="bb9d00d7-b677-49cc-86fa-cdde7e483a25" ChangeDateTime="02/02/2020 13:59:24">
+    <Property Name="ElementName" Value="[dbo].[DemographForm].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[DemographForm]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="datedTime" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="d55f9c13-bd0c-4e5e-8d33-9e0dba5863f6" ChangeDateTime="02/02/2020 14:01:00">
+    <Property Name="ElementName" Value="[dbo].[DemographForm].[Femle]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[DemographForm]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Female" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="3c95b295-cc66-48cc-b2a7-5a98680641a6" ChangeDateTime="02/04/2020 22:42:20">
+    <Property Name="ElementName" Value="[dbo].[FK_DemographForm_ToTable]" />
+    <Property Name="ElementType" Value="SqlForeignKeyConstraint" />
+    <Property Name="ParentElementName" Value="[dbo].[DemographForm]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="[FK_DemographForm_Room]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="2439b02f-4e16-4bd2-8696-8e125408d8b2" ChangeDateTime="02/27/2020 22:51:21">
+    <Property Name="ElementName" Value="[dbo].[DemographForm].[Gender]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[DemographForm]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Female" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="9c031a89-c23e-4a54-932c-fcf31b6605bc" ChangeDateTime="02/27/2020 22:55:12">
+    <Property Name="ElementName" Value="[dbo].[DemographForm].[datedTime]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[DemographForm]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Date" />
+  </Operation>
+</Operations>

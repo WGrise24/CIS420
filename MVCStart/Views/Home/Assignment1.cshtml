@@ -1,0 +1,131 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<style>
+        #concerts {
+            font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+            #concerts td, #concerts th {
+                border: 1px solid #ddd;
+                padding: 8px;
+            }
+
+            #concerts tr:nth-child(even) {
+                background-color: #f2f2f2;
+            }
+
+            #concerts tr:hover {
+                background-color: #ddd;
+            }
+
+            #concerts th {
+                padding-top: 12px;
+                padding-bottom: 12px;
+                text-align: left;
+                background-color: #4CAF50;
+                color: white;
+            }
+    </style>
+
+    <!DOCTYPE html>
+
+    <html>
+    <head>
+        <meta name="viewport" content="width=device-width" />
+        <title>Pearl Jam 2020</title>
+    </head>
+    <body bgcolor="green">
+        <div>
+            <p>
+                Pearl Jam is releasing their 12th studio album in March. <br />
+                This will be their first album release since 2013 and their first tour since 2018. <br />
+                Pearl Jam has been around since 1990 and have had 3 number one albums and 2 number two albums. Over the years their genre has remained mostly
+                the same but has gone from grunge in the early days to more alternative in the present. <br />
+            </p>
+            <img width="50" src="https://www.nme.com/wp-content/uploads/2019/12/pearljam.jpg" />
+            <h2>Concerts I have been to:</h2>
+            <div class="row">
+                <div class="col-lg-6">
+                    <table id="concerts" style="width:50%">
+                        <tr>
+                            <th align="left">Location</th>
+                            <th align="left">Date</th>
+                        </tr>
+                        <tr>
+                            <td>Chicago IL</td>
+                            <td>July 19th, 2013</td>
+                        </tr>
+                        <tr>
+                            <td>St. Louis MO</td>
+                            <td>October 3rd, 2014</td>
+                        </tr>
+                        <tr>
+                            <td>Ft. Lauderdale FL</td>
+                            <td>April 8th, 2016</td>
+                        </tr>
+                        <tr>
+                            <td>Miami FL</td>
+                            <td>April 9th, 2016</td>
+                        </tr>
+                        <tr>
+                            <td>Tampa FL</td>
+                            <td>April 11th, 2016</td>
+                        </tr>
+                        <tr>
+                            <td>Lexington KY</td>
+                            <td>April 26th, 2016</td>
+                        </tr>
+                        <tr>
+                            <td>Manchester TN</td>
+                            <td>June 11th, 2016</td>
+                        </tr>
+                        <tr>
+                            <td>Chicago IL</td>
+                            <td>August 20th, 2016</td>
+                        </tr>
+                        <tr>
+                            <td>Chicago IL</td>
+                            <td>August 22nd, 2016</td>
+                        </tr>
+                        <tr>
+                            <td>Chicago IL</td>
+                            <td>August 18th, 2018</td>
+                        </tr>
+                        <tr>
+                            <td>Chicago IL</td>
+                            <td>August 20th, 2018</td>
+                        </tr>
+                    </table>
+
+                </div>
+                <div class="col-lg-6">
+                    <div id='map' style='width: 550px; height: 450px;'></div>
+                </div>
+            </div>
+        </div>
+    </body>
+    </html>
+
+    <script>
+        L.mapbox.accessToken = 'pk.eyJ1Ijoibm9haHNtaXRoMTIzIiwiYSI6ImNrNWR6OG81ZzAxcWMzZG5tMnZ2azU5ZnEifQ.w-loXgr23kYO87nZRI6VUw';
+
+        var mapGeo = L.mapbox.map('map')
+            .setView([37.8, -96], 4)
+            .addLayer(L.mapbox.styleLayer('mapbox://styles/mapbox/streets-v11'));
+        L.marker([41.85003, -87.65005]).addTo(mapGeo);
+        L.marker([38.62727, -90.19789]).addTo(mapGeo);
+        L.marker([26.12231, -80.14338]).addTo(mapGeo);
+        L.marker([25.77427, -80.19366]).addTo(mapGeo);
+        L.marker([27.94752, -82.45843]).addTo(mapGeo);
+        L.marker([37.98869, -84.47772]).addTo(mapGeo);
+        L.marker([35.47333, -86.08556]).addTo(mapGeo);
+        L.marker([41.85003, -87.65005]).addTo(mapGeo);
+        L.marker([41.85003, -87.65005]).addTo(mapGeo);
+        L.marker([41.85003, -87.65005]).addTo(mapGeo);
+        L.marker([41.85003, -87.65005]).addTo(mapGeo);
+        mapGeo.scrollWheelZoom.disable();
+    </script>
